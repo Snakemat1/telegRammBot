@@ -24,7 +24,7 @@ bot.command('language', async (ctx) => {
     }
 })
 
-bot.command('channelCRS', async (ctx) => {
+bot.command1('channelCRS', async (ctx) => {
     try {
         await ctx.replyWithHTML('<b>Каналы</b>', Markup.inlineKeyboard(
             [
