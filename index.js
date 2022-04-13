@@ -3,7 +3,7 @@ require('dotenv').config()
 
 const text = require('./const')
 const bot = new Telegraf(process.env.BOT_TOKEN)
-bot.start((ctx) => ctx.reply(`Привет ${ctx.message.from.first_name}` + ", ты можешь воспользоваться командойй /help что бы узнать о командах бота"))
+bot.start((ctx) => ctx.reply(`Привет ${ctx.message.from.first_name}` + ", ты можешь воспользоваться командой /help что бы узнать о командах бота"))
 bot.help((ctx) => ctx.reply(text.commands))
 
 bot.command('language', async (ctx) => {
