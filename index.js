@@ -68,6 +68,10 @@ addActionBot('btn_1', './img/1.jpg', text.text1)
 addActionBot('btn_2', './img/2.jpg', text.text2)
 addActionBot('btn_3', './img/3.jpg', text.text3)
 addActionBot('btn_4', './img/4.jpg', text.text4)
+addActionBot('btn_5', text5.text5)
+addActionBot('btn_6', text6.text6)
+addActionBot('btn_7', text7.text7)
+addActionBot('btn_8', text8.text8)
 
 
 
