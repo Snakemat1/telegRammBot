@@ -42,7 +42,7 @@ bot.command('channelCRS', async (ctx) => {
     }
 })
 
-function addActionBot(name, src, text) {
+function addActionBot(name, text) {
     bot.action(name, async (ctx) => {
         try {
             await ctx.answerCbQuery()
@@ -64,12 +64,12 @@ function addActionBot(name, src, text) {
     })
 
 }
-addActionBot('btn_1', './img/1.jpg', text.text1)
-addActionBot('btn_2', './img/2.jpg', text.text2)
-addActionBot('btn_3', './img/3.jpg', text.text3)
-addActionBot('btn_4', './img/4.jpg', text.text4)
-addActionBot('btn_5', './img/1.jpg', text.text5)
-addActionBot('btn_6', '', text.text6)
+addActionBot('btn_1', text.text1)
+addActionBot('btn_2', text.text2)
+addActionBot('btn_3', text.text3)
+addActionBot('btn_4', text.text4)
+addActionBot('btn_5', text.text5)
+addActionBot('btn_6', text.text6)
 addActionBot('btn_7', text.text7)
 addActionBot('btn_8', text.text8)
 
