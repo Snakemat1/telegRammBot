@@ -46,11 +46,7 @@ function addActionBot(name, text) {
     bot.action(name, async (ctx) => {
         try {
             await ctx.answerCbQuery()
-            if (src !== false) {
-                await ctx.replyWithPhoto({
-                    source: src
-                })
-            }
+
             await ctx.replyWithHTML(text, {
                 disable_web_page_previe: true
             })
