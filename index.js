@@ -24,6 +24,23 @@ bot.command('language', async (ctx) => {
     }
 })
 
+bot.command('channelCRS', async (ctx) => {
+    try {
+        await ctx.replyWithHTML('<b>Каналы</b>', Markup.inlineKeyboard(
+            [
+                [Markup.button.callback('javascriptCRS', 'btn_5'), Markup.button.callback('pythonCRS', 'btn_6')],
+                [Markup.button.callback('javaCRS', 'btn_7'), Markup.button.callback('C++CRS', 'btn_8')]
+
+
+
+
+            ]
+
+        ))
+    } catch (e) {
+        console.error(e)
+    }
+})
 
 function addActionBot(name, src, text) {
     bot.action(name, async (ctx) => {
